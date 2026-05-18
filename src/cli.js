@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 /**
- * jsx-to-html CLI
+ * canvas-to-html CLI
  *
  * Usage:
- *   jsx-to-html <input.jsx> [output.html] [options]
+ *   canvas-to-html <input.jsx> [output.html] [options]
  *
  * Options:
  *   --title <text>   Override the HTML <title> tag
@@ -54,10 +54,10 @@ convert(inputArg, outputArg, options).catch(err => {
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function printHelp() {
     console.log(`
-jsx-to-html — Convert React JSX to a single offline HTML file
+canvas-to-html — Convert React canvas JSX files to a single offline HTML file
 
 Usage:
-  jsx-to-html <input.jsx> [output.html] [options]
+  canvas-to-html <input.jsx> [output.html] [options]
 
 Options:
   --title <text>   Override the HTML <title> tag
@@ -66,8 +66,8 @@ Options:
   --help, -h       Show this help
 
 Examples:
-  jsx-to-html slides.jsx
-  jsx-to-html slides.jsx dist/slides.html --title "AI Governance 2026"
+  canvas-to-html slides.jsx
+  canvas-to-html slides.jsx dist/slides.html --title "AI Governance 2026"
   jsx-to-html slides.jsx --no-minify --quiet
 `.trim());
 }

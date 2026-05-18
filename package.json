@@ -1,10 +1,10 @@
 {
-  "name": "jsx-to-html",
+  "name": "canvas-to-html",
   "version": "1.0.0",
-  "description": "Convert React JSX (Tailwind CSS + lucide-react) to a single standalone offline HTML file",
+  "description": "Convert React canvas JSX files (Tailwind CSS + lucide-react) to a single standalone offline HTML file",
   "main": "src/index.js",
   "bin": {
-    "jsx-to-html": "src/cli.js"
+    "canvas-to-html": "src/cli.js"
   },
   "exports": {
     ".": "./src/index.js"

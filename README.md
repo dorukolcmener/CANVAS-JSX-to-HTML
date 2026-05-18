@@ -1,23 +1,23 @@
-# jsx-to-html
+# canvas-to-html
 
-Convert a React JSX file (Tailwind CSS + lucide-react) into a single standalone HTML file that runs **fully offline** in any browser — no server, no build step on the viewer's machine.
+Convert a React canvas JSX file (Tailwind CSS + lucide-react) into a single standalone HTML file that runs **fully offline** in any browser — no server, no build step on the viewer's machine.
 
 ## Install
 
 ```bash
-npm install -g jsx-to-html
+npm install -g canvas-to-html
 ```
 
 Or use locally inside a project:
 
 ```bash
-npm install --save-dev jsx-to-html
+npm install --save-dev canvas-to-html
 ```
 
 ## CLI
 
 ```bash
-jsx-to-html <input.jsx> [output.html] [options]
+canvas-to-html <input.jsx> [output.html] [options]
 ```
 
 | Option | Description |
@@ -31,19 +31,19 @@ jsx-to-html <input.jsx> [output.html] [options]
 
 ```bash
 # Output next to the source file (slides.html)
-jsx-to-html slides.jsx
+canvas-to-html slides.jsx
 
 # Custom output path and title
-jsx-to-html slides.jsx dist/slides.html --title "AI Governance 2026"
+canvas-to-html slides.jsx dist/slides.html --title "AI Governance 2026"
 
 # Unminified output, silent
-jsx-to-html slides.jsx --no-minify --quiet
+canvas-to-html slides.jsx --no-minify --quiet
 ```
 
 ## SDK
 
 ```js
-const { convert } = require('jsx-to-html');
+const { convert } = require('canvas-to-html');
 
 // Minimal — output written next to the source file
 await convert('slides.jsx');
