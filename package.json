@@ -1,6 +1,6 @@
 {
   "name": "canvas-to-html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert React canvas JSX files (Tailwind CSS + lucide-react) to a single standalone offline HTML file",
   "main": "src/index.js",
   "bin": {
